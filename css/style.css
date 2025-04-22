@@ -21,18 +21,30 @@ a {
     text-decoration: none;
 }
 
-.tourbar {
-    margin: 2rem 25%;
-}
-
-.tourbar-contents {
+.navbar {
+    margin: 2rem 3rem;
+    display: flex;
+    gap: 2rem;
     text-transform: uppercase;
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    grid-gap: 1rem;
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.navbar-icon {
+    margin-left: auto;
+}
+
+.navbar-center {
+    display: flex;
+    gap: 2rem;
+    white-space: nowrap;
+}
+
+.navbar-right {
+    margin-left: auto;
+    display: flex;
+    gap: 2rem;
 }
 
 .current-mission {
@@ -52,4 +64,27 @@ a {
     height: 100%;
     background: rgba(0,0,0, 0.4);
     box-shadow: inset 200px 150px 1000px #000, inset -200px 0px 1000px #000;
+}
+
+.upcoming-launch {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: url('../img/background-1.png') no-repeat center center/cover;
+}
+
+.upcoming-launch::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0, 0.4);
+    box-shadow: inset 200px 0px 1000px #000, inset -200px 0px 1000px #000;
+}
+
+.text-md {
+    font-size: 0.8rem;
 }
